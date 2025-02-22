@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        
+        *
+        {
+            font-family: Segoe UI;
+        }
+        
+        ol
+        {
+            list-style-type: decimal;
+        }
+        
+        ul
+        {
+            list-style-type: circle;
+            margin-left: 20px;
+            list-style-image: url(arrow-bottom-right-bold-outline-custom.png);
+        }
+        
+        dt{
+            color: darkgreen;
+            font-weight: bold;
+            margin-top: 15px;
+            padding-left: 40px;
+        }
+        dd
+        {
+            font-style: italic;
+        }
+        
+        li
+        {
+            padding-left: 20px;
+        }
+        
+        .grec
+        {
+            list-style-type: lower-greek;
+        }
+        
+        .li-st-pos
+        {
+            list-style-position: inside;
+        }
+        
+        dd::after
+        {
+            background-color: aqua;
+            content: "Hello";
+        }
+        
+        dd::before
+        {
+            content: "- ";
+            color: blue;
+        }
+    </style>
+</head>
+<body>
+    <ol>
+        <li>Item 1</li>
+        <li>Item 2</li>
+        <li>..........</li>
+        <li value="10">Item 4</li>
+        <li>Item 5</li>
+    </ol>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Error, quaerat, sequi. Necessitatibus, blanditiis, fugit excepturi officia numquam dolorum obcaecati quos?</p>
+    <ol start="12" reversed>
+        <li>Item 1</li>
+        <li>Item 2</li>
+        <li>Item 3</li>
+        <li>Item 4</li>
+        <li>Item 5</li>
+    </ol>
+    
+    <ul>
+        <li>Item 1</li>
+        <li>Item 2
+            <ol>
+                <li>Lorem ipsum dolor.</li>
+                <li>Lorem ipsum dolor.</li>
+                <li>Lorem ipsum dolor.
+                    <ol class="grec">
+                        <li>Lorem ipsum dolor sit.</li>
+                        <li>Libero fuga, dolor consectetur.</li>
+                        <li>Unde dolorem fugiat ut.</li>
+                        <li>Voluptatum sunt, iusto perspiciatis.</li>
+                    </ol>
+                </li>
+                <li>Lorem ipsum dolor sit.</li>
+            </ol>
+        </li>
+        <li>Item 3</li>
+        <li>Item 4</li>
+        <li>Item 5</li>
+    </ul>
+    
+    <dl>
+        <dt>Internet</dt>
+        <dd>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facilis porro error, ullam corporis quas dolor sit natus, rem aperiam animi odit dignissimos id, harum voluptates debitis, dolore nemo in. Quae.</dd>
+        <dt>IP</dt>
+        <dd>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae praesentium enim veritatis. Temporibus molestiae soluta, officiis deserunt adipisci possimus odio?</dd>
+        <dt>Socket</dt>
+        <dd>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos ad repellat, iste optio voluptatem sapiente.</dd>
+    </dl>
+    
+    <ol class="li-st-pos">
+        <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae hic suscipit, commodi et. Minus, asperiores quibusdam odio. Impedit eligendi iure itaque provident, alias laboriosam dolore libero aspernatur repellendus laudantium totam.</li>
+        <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate, in dolores vitae necessitatibus laboriosam quidem sit debitis aperiam dolorem suscipit. Est asperiores eveniet nemo commodi, fuga, sapiente inventore dolores ipsum!</li>
+        <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quae aliquam nulla ex quos architecto dolores ratione, dolorum, praesentium expedita amet id culpa placeat rerum totam quam cumque delectus dolorem inventore.</li>
+        <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis similique consequatur quam eum, quis facilis tempora, temporibus perferendis sapiente aperiam laborum dolorem eveniet esse ipsum optio voluptatibus accusantium rem dolor.</li>
+        <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Provident veniam temporibus atque omnis cupiditate, ipsam sunt eligendi ipsum nam consequuntur? Incidunt, accusamus tenetur repellat eos dolorum aperiam sit architecto ex?</li>
+    </ol>
+    
+</body>
+</html>
