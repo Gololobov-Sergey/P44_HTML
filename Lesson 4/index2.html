@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        
+        
+        
+        ul
+        {
+            list-style-position: inside;
+        }
+        
+        li
+        {
+            padding: 10px;
+        }
+        
+        li:nth-child(even)
+        {
+            background-color: aqua;
+        }
+        
+        li:nth-child(odd)
+        {
+            background-color: #05b9b9;
+        }
+        
+        li.c1
+        {
+            list-style-image: url(unchecked_16.png);
+            
+        }
+        li.c2
+        {
+            list-style-image: url(checked_16.png);
+            text-decoration: line-through;
+            background-color: antiquewhite;
+        }
+        
+        li.c3
+        {
+            
+        }
+        
+        a
+        {
+            text-decoration: none;
+/*            cursor: help;*/
+        }
+        
+        .c5>li
+        {
+            display: inline-block;
+            border: 1px solid red;
+            
+            
+        }
+    
+    </style>
+    
+</head>
+<body>
+    <ul>
+        <li class="c1">Item 1 <span>x</span></li>
+        <li class="c2">Item 2 <span>x</span></li>
+        <li class="c1">Item 3 <span>x</span></li>
+        <li class="c3">Item 4 <span>x</span></li>
+        <li class="c1">Item 1 <span>x</span></li>
+        <li class="c2">Item 2 <span>x</span></li>
+        <li class="c1">Item 3 <span>x</span></li>
+        <li class="c3">Item 4 <span>x</span></li>
+    </ul>
+    
+    <a href="index.html" target="_blank">Click</a>
+    
+    
+    
+    h1+iframe+ul>(li>a>img)*6
+    
+</body>
+</html>
