@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    
+    <style>
+    
+        a
+        {
+            text-decoration: none;
+            display: inline-block;
+            background-color: yellow;
+            color: blue;
+            padding: 10px 20px;
+            border: 1px solid blue;
+            border-radius: 10px;
+            
+            transition: all 1s ease 0s;
+            
+/*            transform: rotate(30deg);*/
+/*            transform: rotateY(89deg);*/
+            
+            transform-origin: right top;
+        }
+        
+        a:hover
+        {
+            background-color: blue;
+            color: yellow;
+            border: 1px solid yellow;
+/*            transform: scale(1.2);*/
+            
+            transform: rotate(-30deg);
+/*            transform: skew(30deg, 30deg);*/
+/*            transform: translateX(20px);*/
+        }
+        
+        h1
+        {
+            padding: 20px;
+            background-color: aqua;
+            animation: anime 5s ease alternate ;
+            animation-fill-mode: forwards;
+            
+/*            transition: all 2s linear 0s;*/
+            
+        }
+        
+        h1:hover
+        {
+            padding-left: 500px;
+        }
+
+        @keyframes anime {
+            0% 
+            { 
+                padding-left: 20px;
+            }
+            
+        
+            100%
+            { 
+                padding-left: 500px;
+            }
+        }
+        
+        
+        .cont
+        {
+            width: 600px;
+            height: 300px;
+            background-color: aqua;
+            overflow: hidden;
+            position: relative;
+        }
+        .pic
+        {
+            display: block;
+            position: absolute;
+        }
+        
+        .pic1
+        {
+/*            margin-top: 30px;*/
+            transform: scale(0.4) rotate(-30deg);
+            animation: an2 2s linear forwards;
+        }
+        
+        .pic2
+        {
+/*            margin-top: 40px;*/
+            left: 200px;
+            top: 300px;
+/*            transform: scale(0.4) rotate(-30deg);*/
+            animation: an2 2s linear forwards 2s;
+        }
+        
+        .pic3
+        {
+/*            margin-top: 40px;*/
+            left: 400px;
+            top: 300px;
+/*            transform: scale(0.4) rotate(-30deg);*/
+            animation: an2 2s linear forwards 4s;
+        }
+        
+        
+        @keyframes an2
+        {
+            from {top: 300px;}
+            to{top: 30px;}
+        }
+    </style>
+</head>
+<body>
+   
+<!--
+    <a href="">Click</a>
+    <h1>HTML</h1>
+-->
+   
+   <div class="cont">
+       <div class="pic pic1">
+           <img src="calc.png" alt="">
+       </div>
+       <div class="pic pic2">
+           <img src="book.png" alt="">
+       </div>
+       <div class="pic pic3">
+           <img src="book.png" alt="">
+       </div>
+   </div>
+   <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur quis nobis eius porro aliquid placeat repellendus nam. Fuga ullam ducimus nulla porro error eveniet suscipit deserunt dolore nemo totam velit in architecto, laborum, quod reprehenderit. A facere aperiam eos, nulla in deserunt deleniti, perspiciatis quidem, exercitationem et, dolorem nesciunt unde.</p>
+    
+</body>
+</html>
