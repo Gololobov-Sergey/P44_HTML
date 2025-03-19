@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    
+    <style>    
+        nav ul
+        {
+            display: inline-table;
+            list-style: none;
+            position: relative;
+            background: #4c996b;
+            padding-left: 0;
+        }
+        
+        nav ul li a
+        {
+            color: white;
+            display: block;
+            text-decoration: none;
+            text-align: center;
+            padding: 15px 20px;
+        }
+        
+        nav ul ul
+        {
+            display: none;
+            position: absolute;
+        }
+        
+        nav ul li
+        {
+            float: left;
+            width: 120px;
+        }
+        
+        nav ul li:hover
+        {
+            background: #3f8058;
+        }
+        
+        nav ul li:hover > ul
+        {
+            display: block;
+        }
+        
+        nav ul ul li
+        {
+            position: relative;
+            float:none;
+        }
+         nav ul ul ul
+        {
+            position: absolute;
+            left: 100%;
+            top: 0;
+        }
+        li
+        {
+            border: 1px solid #3f8058;
+        }
+    
+    </style>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="">Home</a></li>
+            <li><a href="">Categiries</a>
+                <ul>
+                    <li><a href="">Man</a></li>
+                    <li><a href="">Woomen</a>
+                        <ul>
+                            <li><a href="">Dress</a></li>
+                            <li><a href="">Pants</a>
+                                <ul>
+                                    <li><a href="">Item 1</a></li>
+                                    <li><a href="">Item 2</a></li>
+                                    <li><a href="">Item 3</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="">Shoes</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="">Kids</a></li>
+                </ul>
+            </li>
+            <li><a href="">About</a></li>
+            <li><a href="">Contacts</a></li>
+        </ul>
+    </nav>
+</body>
+</html>
