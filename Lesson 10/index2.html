@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        .container
+        {
+            display: flex;
+            flex-direction: row;
+            width: 1100px;
+            margin: auto;
+            border: 2px solid gray;
+            padding: 20px;
+        }
+        .logo
+        {
+            min-width: 330px;
+        }
+        
+        .centr
+        {
+            
+        }
+        .preloader
+        {
+            display: flex;
+            border: 1px solid #404084;
+          
+        }
+        
+        .left
+        {
+            width: 200px;
+            background-color: #bababa;
+            padding: 5px;
+        }
+        
+        .right
+        {
+            width: 300px;
+            padding: 5px;
+            text-align: end;
+        }
+        
+        .button
+        {
+            color: white;
+            background-color: #373789;
+/*            min-width: 200px;*/
+            height: 20px;
+            padding: 5px 50px;
+            margin-left: 20px;
+        }
+        
+        p:first-child
+        {
+            font-weight: bold;
+            font-size: 1.5em;
+        }
+    </style>
+    
+</head>
+<body>
+    <div class="container">
+        <div class="logo">
+            <img src="loading.png" alt="">
+        </div>
+        <div class="centr">
+            <div class="preloader">
+                <div class="left">UPLOADING 40%</div>
+                <div class="right">About 23 minutes remaining</div>
+            </div>
+            <div class="text">
+                <p>Title of video</p>
+                <p>Lorem ipsum dolor sit amet.</p>
+            </div>
+        </div>
+        <div class="button">DONE</div>
+    </div>
+    
+</body>
+</html>

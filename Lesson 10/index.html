@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <style>
+        
+        .container
+        {
+            border: 2px solid black;
+            display: flex;
+            height: 600px;
+            flex-direction: row;
+            
+            justify-content: center;
+            
+            align-items: flex-start;
+            
+/*            flex-wrap: wrap;*/
+            
+/*            align-content: stretch;*/
+/*            flex-basis: 200px;*/
+           
+        }
+        .cont
+        {
+/*            height: 100px;*/
+            width: 200px;
+            padding: 30px;
+            text-align: center;
+        }
+        .cont-1
+        {
+            background-color: aqua;
+        }
+        .cont-2
+        {
+            background-color: cadetblue;
+        }
+        .cont-3
+        {
+            background-color: tomato;
+            
+        }
+        .cont-4
+        {
+            background-color: lawngreen;
+        }
+        
+        @media screen and (max-width: 900px)
+        {
+            .container
+            {
+                flex-direction: column;
+                align-items: center;
+            }
+            
+            .cont-4
+            {
+                display: none;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="cont cont-1">1</div>
+        <div class="cont cont-2">2</div>
+        <div class="cont cont-3">3</div>
+        <div class="cont cont-4">4</div>
+<!--
+        <div class="cont cont-1">5</div>
+        <div class="cont cont-2">6</div>
+        <div class="cont cont-3">7</div>
+        <div class="cont cont-4">8</div>
+        <div class="cont cont-1">9</div>
+-->
+    </div>
+</body>
+</html>
